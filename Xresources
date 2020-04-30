@@ -1,0 +1,78 @@
+! Tommy .Xresources file
+! 
+! 
+
+
+
+!################################
+!###### Nord Theme Palette ######
+!################################
+! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+! References: https://www.nordtheme.com/
+! Description: An arctic, north-bluish color palette.
+!
+! Polar Night
+#define nord0 #2E3440
+! Used for backgrounds.
+#define nord1 #3B4252
+! Used as a lighter background color for UI elements like status bars.
+#define nord2 #434C5E
+! Used to colorize the currently active text editor
+#define nord3 #4C566A
+! Used for comments, invisibles, indent and wrap guide marker.
+! 
+! Snow Storm
+#define nord4 #D8DEE9
+! Used for caret, variables, constants, attributes and fields.
+#define nord5 #E5E9F0
+! Used for inconspicuous text or animations (eg, brighter text color).
+#define nord6 #ECEFF4
+! Used for plain text and syntex characters (eg, [],{}).
+! 
+! Frost
+#define nord7 #8FBCBB
+! Used for classes, classes, types and primitives.
+#define nord8 #88C0D0
+! Used for declarations, calls, functions, methods (the most visual attention).
+#define nord9 #81A1C1
+! Used for keywords, operators, tags, units, punctuations.
+#define nord10 #5E81AC
+! Used for pragmas, comment and pre-processor statements.
+! 
+! Aurora
+#define nord11 #BF616A
+! Used for errors.
+#define nord12 #D08770
+! Used for annotations and decorators.
+#define nord13 #EBCB8B
+! Used for warnings.
+#define nord14 #A3BE8C
+! Used for success states and for strings of any type.
+#define nord15 #B48EAD
+! Used for uncommon functionality and numbers of any type.
+
+
+
+*.color0:   nord0
+*.color1:   nord1
+*.color2:   nord2
+*.color3:   nord3
+*.color4:   nord4
+*.color5:   nord5
+*.color6:   nord6
+*.color7:   nord7
+*.color8:   nord8
+*.color9:   nord9
+*.color10:  nord10
+*.color11:  nord11
+*.color12:  nord12
+*.color13:  nord13
+*.color14:  nord14
+*.color15:  nord15
+
+
+*.foreground:   nord6
+*.background:   nord0
+*.cursorColor:  nord4
+
+!*.font: xft:JetBrainsMono Nerd Font Mono:style=Regular:size=10
