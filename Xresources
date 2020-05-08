@@ -1,5 +1,10 @@
 ! Tommy .Xresources file
-! 
+! Note:
+!   To properly load $HOME/.Xresources with gdm3 the follwing changes are needed
+!   in /etc/gdm3/Xsession at line 132:
+!   
+!       - xrdb -nocpp -merge "$userresources"
+!       + xrdb -merge "$userresources"
 ! 
 
 
@@ -8,8 +13,13 @@
 !###### Nord Theme Palette ######
 !################################
 ! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
-! References: https://www.nordtheme.com/
-! Description: An arctic, north-bluish color palette.
+! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+
+! Project:    Nord XResources
+! Version:    0.1.0
+! Repository: https://github.com/arcticicestudio/nord-xresources
+! License:    MIT
+
 !
 ! Polar Night
 #define nord0 #2E3440
@@ -75,4 +85,5 @@
 *.background:   nord0
 *.cursorColor:  nord4
 
-!*.font: xft:JetBrainsMono Nerd Font Mono:style=Regular:size=10
+*fading: 35
+*fadeColor: nord3
