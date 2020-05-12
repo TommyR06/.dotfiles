@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# i3lock-color script
+
 nord0='#2E3440ff'
 nord1='#3B4252ff'
 nord2='#434C5Eff'
@@ -28,7 +30,7 @@ DATE=$(date +"%A, %B %Y")
 # use "convert" to elaborate your img if needed
 # eg.
 #   >convert image1 -resize 1600x900! -colorspace RGB image2.png
-IMG="/home/tr/.config/i3/0067.png"
+IMG="/home/tr/.config/i3/src/0067.png"
 
 
 i3lock \
