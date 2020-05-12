@@ -1,0 +1,64 @@
+#zathurarc File
+
+#Colors
+set completion-bg "#434C5E"
+set completion-fg "#ECEFF4"
+set completion-group-bg "#3B4252"
+set completion-group-fg "#ECEFF4"
+set completion-highlight-bg "#2E3440"
+set completion-highlight-fg "#ECEFF4"
+
+set recolor-lightcolor "#141a21"
+set recolor-darkcolor "#d3dae3"
+set default-bg "#2E3440"
+set default-fg "#ECEFF4"
+
+set inputbar-bg "#434C5E"
+set inputbar-fg "#ECEFF4"
+set notification-bg "#434C5E"
+set notification-fg "#ECEFF4"
+set notification-error-bg "#BF616A"
+set notification-error-fg "#ECEFF4"
+set notification-warning-bg "#D08770"
+set notification-warning-fg "#ECEFF4"
+set tabbar-bg "#2E3440"
+set tabbar-fg "#ECEFF4"
+set tabbar-focus-bg "#4C566A"
+set tabbar-focus-fg "#ECEFF4"
+set statusbar-bg "#2E3440"
+set statusbar-fg "#ECEFF4"
+set index-bg "#434C5E"
+set index-fg "#ECEFF4"
+set index-active-bg "#8FBCBB"
+set index-active-fg "#ECEFF4"
+set render-loading-bg "#4C566A"
+set render-loading-fg "#ECEFF4"
+
+# settings
+set guioptions csv
+set selection-clipboard clipboard
+
+# key bindings
+
+map [normal]     <A-1> set "first-page-column 1"
+map [fullscreen] <A-1> set "first-page-column 1"
+map [normal]     <A-2> set "first-page-column 2"
+map [fullscreen] <A-2> set "first-page-column 2"
+
+map [normal]     <C-Up>    scroll half-up
+map [fullscreen] <C-Up>    scroll half-up
+map [normal]     <C-Down>  scroll half-down
+map [fullscreen] <C-Down>  scroll half-down
+map [normal]     <C-Left>  scroll half-left
+map [fullscreen] <C-Left>  scroll half-left
+map [normal]     <C-Right> scroll half-right
+map [fullscreen] <C-Right> scroll half-right
+
+# Why are these only defined for normal mode by default?
+map [fullscreen] a adjust_window best-fit
+map [fullscreen] s adjust_window width
+map [fullscreen] f follow
+map [fullscreen] d toggle_page_mode 2
+map [fullscreen] <Tab> toggle_index
+
+map [index] q quit 
