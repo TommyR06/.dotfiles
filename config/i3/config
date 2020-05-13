@@ -180,7 +180,7 @@ bindsym $mod+Shift+q exec --no-startup-id sh -c '[ $(echo "NO\nYES" | dmenu -nf 
 #       Open in floating mode
 # ------------------------------------------------
 
-for_window [class="Gimp"] floating enable
+#for_window [class="Gimp"] floating enable
 
 
 # ------------------------------------------------
@@ -269,9 +269,10 @@ mode "$mode_gaps_outer" {
 # ------------------------------------------------
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/i3/src/xss-lock-script.sh
+exec_always --no-startup-id $HOME/.config/i3/src/xsetwacom-script.sh
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id picom -Cb --config $HOME/.config/picom/picom.conf
-exec --no-startup-id $HOME/.config/i3/src/xss-lock-script.sh
 
 
 # ------------------------------------------------
