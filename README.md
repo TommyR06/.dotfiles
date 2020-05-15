@@ -1,5 +1,5 @@
 # .dotfiles README
-My dotfiles for Ubuntu 20.04 LST Focal Fossa.
+My dotfiles for **Ubuntu 20.04 LST Focal Fossa**.
 Wherever possible to customize I chose:
 - [NordTheme](https://www.nordtheme.com/)
 - [JetBrainsMono Nerd Font Mono Regular](https://www.nerdfonts.com/)
