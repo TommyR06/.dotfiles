@@ -25,7 +25,7 @@ background=$nord0
 Blank='#00000000'  # blank
 White='#ffffffff'  # white opaque
 
-DATE=$(date +"%A, %B %Y")
+DATE=$(LC_ALL=en_US-UTF-8 date +"%A, %B %Y")
 # It must be a PNG image in rgb colorspace and with correct size
 # use "convert" to elaborate your img if needed
 # eg.
@@ -63,16 +63,20 @@ i3lock \
 --timepos="w/2:h/2"         \
 --timesize=96               \
 --timecolor=$nord6          \
+--time-font="JetBrains Mono Regular Nerd Font Complete Mono" \
 \
 --datestr="$DATE"           \
 --datepos="tx:ty+80"        \
 --datesize=32               \
 --datecolor=$nord6          \
+--date-font="JetBrains Mono Regular Nerd Font Complete Mono" \
 \
 --veriftext=""              \
 --verifcolor=$Blank         \
+--verif-font="JetBrains Mono Regular Nerd Font Complete Mono" \
 --wrongtext=""              \
---wrongcolor=$Blank
+--wrongcolor=$Blank         \
+--wrong-font="JetBrains Mono Regular Nerd Font Complete Mono" 
 
 # --textsize=20
 # --modsize=10
