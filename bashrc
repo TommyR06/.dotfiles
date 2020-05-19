@@ -98,6 +98,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+#############
+# Variables #
+#############
+
+CXX=g++
+
 
 #############
 #   Alias   #
